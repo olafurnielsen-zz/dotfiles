@@ -87,6 +87,7 @@ export JAVA_HOME=$(/usr/libexec/java_home)
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 #
-# Example aliases
 alias zshconfig="vim ~/.zshrc"
-alias ls="gls -lah --color=auto"
+# alias ls="gls -lah --color=auto"
+alias ls="exa -lah --git"
+alias l="exa -lah --git"

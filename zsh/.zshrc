@@ -76,7 +76,9 @@ source $ZSH/oh-my-zsh.sh
 # export SSH_KEY_PATH="~/.ssh/rsa_id"
 
 # ls colors for solarized
-eval `gdircolors ~/.dircolors.ansi-dark`
+
+# Stopped using gdircolors in favor of exa
+# eval `gdircolors ~/.dircolors.ansi-dark`
 
 DEFAULT_USER="oon"
 

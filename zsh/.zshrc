@@ -1,8 +1,19 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
+# Add Homebrew path to the front of path
+export PATH=/usr/local/bin:/usr/local/sbin:$PATH
+export PATH=$PATH:/Users/oon/Library/Python/3.6/bin
+
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/oon/.oh-my-zsh
+
+# Python Dev Configuration
+export WORKON_HOME=$HOME/code/.virtualenvs
+export PROJECT_HOME=$HOME/code
+export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3
+#export VIRTUALENVWRAPPER_VIRTUALENV=/usr/local/bin/virtualenv
+export VIRTUALENVWRAPPER_VIRTUALENV_ARGS='--no-site-packages'
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -51,7 +62,7 @@ ZSH_THEME="agnoster"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(extract git node npm)
+plugins=(extract git node npm virtualenvwrapper)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -83,6 +94,8 @@ source $ZSH/oh-my-zsh.sh
 DEFAULT_USER="oon"
 
 export JAVA_HOME=$(/usr/libexec/java_home)
+
+eval "$(direnv hook zsh)"
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh

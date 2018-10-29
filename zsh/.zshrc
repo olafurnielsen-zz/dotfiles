@@ -3,7 +3,7 @@
 
 # Add Homebrew path to the front of path
 export PATH=/usr/local/bin:/usr/local/sbin:$PATH
-export PATH=$PATH:/Users/oon/Library/Python/3.6/bin
+export PATH=$PATH:/Users/oon/Library/Python/3.6/bin:/Users/oon/Library/Python/2.7/bin
 
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/oon/.oh-my-zsh
@@ -106,3 +106,10 @@ alias zshconfig="vim ~/.zshrc"
 # alias ls="gls -lah --color=auto"
 alias ls="exa -lah --git"
 alias l="exa -lah --git"
+
+# tabtab source for serverless package
+# uninstall by removing these lines or running `tabtab uninstall serverless`
+[[ -f /Users/oon/.config/yarn/global/node_modules/tabtab/.completions/serverless.zsh ]] && . /Users/oon/.config/yarn/global/node_modules/tabtab/.completions/serverless.zsh
+# tabtab source for sls package
+# uninstall by removing these lines or running `tabtab uninstall sls`
+[[ -f /Users/oon/.config/yarn/global/node_modules/tabtab/.completions/sls.zsh ]] && . /Users/oon/.config/yarn/global/node_modules/tabtab/.completions/sls.zsh

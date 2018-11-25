@@ -3,5 +3,6 @@
     "workbench.iconTheme": "vs-nomo-dark",
     "editor.fontFamily": "'Menlo for Powerline', Menlo, Monaco, 'Courier New', monospace",
     "editor.fontSize": 14,
+    "window.zoomLevel": 0,
     // "window.zoomLevel": -1
 }

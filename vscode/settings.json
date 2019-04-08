@@ -1,8 +1,10 @@
 {
-    "workbench.colorTheme": "Solarized Dark",
+    "workbench.colorTheme": "Massimo",
     "workbench.iconTheme": "vs-nomo-dark",
-    "editor.fontFamily": "'Menlo for Powerline', Menlo, Monaco, 'Courier New', monospace",
-    "editor.fontSize": 14,
+    "editor.fontFamily": "Hack",
+    "editor.fontSize": 15,
     "window.zoomLevel": 0,
-    // "window.zoomLevel": -1
+    "editor.cursorStyle": "underline",
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true,
 }
